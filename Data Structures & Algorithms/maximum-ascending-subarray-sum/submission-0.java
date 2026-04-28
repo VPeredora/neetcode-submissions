@@ -1,6 +1,6 @@
 class Solution {
     public int maxAscendingSum(int[] nums) {
-        int sum = nums[0, temp = 0;
+        int sum = nums[0], temp = 0;
 
         for (int i = 1; i < nums.length; i++) {
             temp = nums[i - 1];
