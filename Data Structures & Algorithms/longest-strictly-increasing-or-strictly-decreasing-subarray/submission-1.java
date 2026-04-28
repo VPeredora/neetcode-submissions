@@ -12,10 +12,8 @@ class Solution {
                 i++;
             }
             if (tempI > 1 || tempD > 1) {
-                length = Math.max(tempI, length);
-                length = Math.max(tempD, length);
-                tempI = 1;
-                tempD = 1;
+                length = Math.max(length, Math.max(tempI, tempD));
+                tempI = tempD = 1;
                 i--;
             }
         }
