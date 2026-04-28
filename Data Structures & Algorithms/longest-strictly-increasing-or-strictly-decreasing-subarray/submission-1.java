@@ -12,8 +12,8 @@ class Solution {
                 i++;
             }
             if (tempI > 1 || tempD > 1) {
-                length = length < tempI ? tempI : length;
-                length = length < tempD ? tempD : length;
+                length = Math.max(tempI, length);
+                length = Math.max(tempD, length);
                 tempI = 1;
                 tempD = 1;
                 i--;
