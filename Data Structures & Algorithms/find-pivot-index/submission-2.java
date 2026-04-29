@@ -9,7 +9,6 @@ class Solution {
             if (i == nums.length - 1) break;
             sumR -= nums[i + 1];
             sumL += nums[i];
-            System.out.println(sumL + " | " + sumR);
             pivotIndex++;
         }
 
