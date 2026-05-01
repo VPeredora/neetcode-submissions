@@ -4,7 +4,8 @@ class Solution {
         Set<String> notDistinct = new HashSet<>();
 
         for (String str : arr)
-            if (!distinct.add(str) || notDistinct.contains(str)) {
+            if (notDistinct.contains(str)) continue;
+            if (!distinct.add(str)) {
                 distinct.remove(str);
                 notDistinct.add(str);
             }
