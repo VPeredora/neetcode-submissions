@@ -4,11 +4,9 @@ class NumArray {
 
     public NumArray(int[] nums) {
         prefix = new int[nums.length + 1];
-        int sum = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            sum += nums[i];
-            prefix[i + 1] = sum;
+        for (int i = 0; i < nums.length; i++)
+            prefix[i + 1] = prefix[i] + nums[i];
         }
     }
     
