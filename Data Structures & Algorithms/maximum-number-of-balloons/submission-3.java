@@ -3,7 +3,7 @@ class Solution {
         Map<Character, Integer> frequency = new HashMap<>();
 
         for (char c : text.toCharArray())
-            if ("balloon".indexOf(c) != -1)
+            if ("balon".indexOf(c) != -1)
                 frequency.merge(c, 1, Integer::sum);
             
         if (frequency.size() == 5 && frequency.get('l') >= 2 && frequency.get('o') >= 2) {
