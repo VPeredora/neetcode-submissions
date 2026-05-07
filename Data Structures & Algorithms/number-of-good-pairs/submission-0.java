@@ -5,7 +5,7 @@ class Solution {
         for (int num : nums)
             frequency.merge(num, 1, Integer::sum);
 
-        return frequency.values().stream().filter(v -> v > 1)
+        return frequency.values().stream()
                .mapToInt(v -> (v * (v - 1)) / 2).sum();
     }
 }
