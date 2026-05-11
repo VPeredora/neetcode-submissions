@@ -9,6 +9,6 @@ class Solution {
             }
         }
 
-        return largest == '\0' ? "" : new String(new char[]{largest, largest, largest});
+        return largest == '\0' ? "" : String.valueOf(largest).repeat(3);
     }
 }
