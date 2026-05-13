@@ -1,5 +1,5 @@
 class Solution {
-   private record Point(int x, int y) {}
+    private record Point(int x, int y) {}
 
     public boolean isPathCrossing(String path) {
         Set<Point> units = new HashSet<>();
