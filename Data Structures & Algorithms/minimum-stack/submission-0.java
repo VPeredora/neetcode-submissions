@@ -1,13 +1,11 @@
 class MinStack {
-    Deque<Integer> stack;
-    int minimum = Integer.MAX_VALUE;
+    private Deque<Integer> stack;
 
     public MinStack() {
         stack = new ArrayDeque<>();
     }
     
     public void push(int val) {
-        minimum = Math.min(minimum, val);
         stack.push(val);
     }
     
