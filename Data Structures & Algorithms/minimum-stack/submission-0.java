@@ -19,7 +19,7 @@ class MinStack {
     
     public int getMin() {
         Deque<Integer> minimum = new ArrayDeque<>(stack);
-        int min = Integer.MAX_VALUE;
+        int min = stack.peek();
 
         while (!minimum.isEmpty())
             min = Math.min(minimum.pop(), min);
