@@ -9,7 +9,6 @@ class Solution {
             multiPref *= nums[i - 1];
             prefix[i] = multiPref;
         }
-        System.out.println(Arrays.toString(prefix));
 
         int[] suffix = new int[N];
         suffix[N - 1] = 1;
@@ -18,7 +17,6 @@ class Solution {
             multiSuff *= nums[i + 1];
             suffix[i] = multiSuff;
         }
-        System.out.println(Arrays.toString(suffix));
 
         int[] result = new int[N];
         for (int i = 0; i < N; i++)
