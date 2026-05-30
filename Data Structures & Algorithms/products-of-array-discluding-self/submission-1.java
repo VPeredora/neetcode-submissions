@@ -21,6 +21,7 @@ class Solution {
         int[] result = new int[N];
         for (int i = 0; i < N; i++)
             result[i] = prefix[i] * suffix[i];
+        
         return result;
     }
 }  
