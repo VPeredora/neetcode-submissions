@@ -1,9 +1,9 @@
 class Solution {
     public int searchInsert(int[] nums, int target) {
-        int left = 0, right = nums.length, middle = 0;
+        int left = 0, right = nums.length;
 
         while (left < right) {
-            middle = left + ((right - left) / 2);
+            int middle = left + ((right - left) / 2);
 
             if (target <= nums[middle]) right = middle;
             else left = middle + 1;
