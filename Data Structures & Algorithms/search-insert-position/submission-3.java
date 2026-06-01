@@ -9,6 +9,6 @@ class Solution {
             else left = middle + 1;
         }
 
-        return (left < nums.length && nums[left] == target) ? left : left;
+        return left;
     }
 }
