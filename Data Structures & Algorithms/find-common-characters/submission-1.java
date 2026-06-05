@@ -19,7 +19,7 @@ class Solution {
         
         List<String> common = new ArrayList<>();
         for (int i = 0; i < 26; i++)
-            for (int j = 0; j < frequency[i]; j++)
+            for (int j = frequency[i]; j > 0; j--)
                 common.add(String.valueOf((char) (i + 'a')));
 
         return common;
