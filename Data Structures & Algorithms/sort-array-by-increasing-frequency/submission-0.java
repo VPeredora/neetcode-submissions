@@ -12,6 +12,6 @@ class Solution {
             return Integer.compare(frequencyA, frequencyB);
         });
 
-        return Arrays.stream(numbers).mapToInt(i -> i).toArray();
+        return Arrays.stream(numbers).mapToInt(Integer::intValue).toArray();
     }
 }
