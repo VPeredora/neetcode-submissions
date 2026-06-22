@@ -13,10 +13,6 @@ class Solution {
             if (asteroid != 0) stack.push(asteroid);
         }
 
-        int[] result = new int[stack.size()];
-        for (int i = result.length - 1; i >= 0; i--)
-            result[i] = stack.pop();
-
-        return result;
+        return stack.stream().mapToInt(Integer::intValue).toArray();
     }
 }
