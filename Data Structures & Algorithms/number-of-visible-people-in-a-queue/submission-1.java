@@ -4,16 +4,13 @@ class Solution {
         int[] result = new int[heights.length];
 
         for (int i = heights.length - 1; i >= 0; i--) {
-            int amount = 0;
-
             while (!stack.isEmpty() && heights[i] > stack.peek()) {
                 stack.pop();
-                amount++;
+                result[i]++;
             }
 
-            if (!stack.isEmpty()) amount++;
+            if (!stack.isEmpty()) result[i]++;
             stack.push(heights[i]);
-            result[i] = amount;
         }
 
         return result;
