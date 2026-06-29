@@ -5,9 +5,9 @@ class Solution {
         while (tickets[k] > 0) {
             while (tickets[person % tickets.length] == 0) 
                 person++;
+            
             tickets[person % tickets.length]--;
-            person++;
-            time++;
+            person++; time++;
         }
 
         return time;
