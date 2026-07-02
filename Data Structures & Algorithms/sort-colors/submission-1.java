@@ -4,11 +4,9 @@ class Solution {
         for (int num : nums)
             frequency[num]++;
         
-        int color = 0;
-        for (int i = 0; i < nums.length; i++) {
-            while (color < frequency.length && frequency[color] <= 0) color++;
-            frequency[color]--;
-            nums[i] = color;
-        }
+        int index = 0;
+        for (int i = 0; i < 3; i++)
+            while (frequency[i]-- > 0)
+                nums[index++] = i;
     }
 }
