@@ -5,6 +5,7 @@ class Solution {
             frequency[c - 'a']++;
 
         StringBuilder result = new StringBuilder(s.length());
+        
         for (char c : order.toCharArray())
             while (frequency[c - 'a']-- > 0) result.append(c);
         
