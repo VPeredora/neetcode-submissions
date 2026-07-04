@@ -1,4 +1,4 @@
-class Solution {
+class Solution { // O(n)
     public String customSortString(String order, String s) {
         int[] frequency = new int[26];
         for (char c : s.toCharArray())
