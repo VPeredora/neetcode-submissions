@@ -1,4 +1,4 @@
-class Solution {
+class Solution { //O(n)
     public String customSortString(String order, String s) {
         int[] rank = new int[26];
         for (int i = 0; i < order.length(); i++)
