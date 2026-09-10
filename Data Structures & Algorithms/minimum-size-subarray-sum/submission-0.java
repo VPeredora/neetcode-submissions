@@ -8,7 +8,6 @@ class Solution {
             while (sum >= target) {
                 length = Math.min(length, r - l + 1);
                 sum -= nums[l++];
-                System.out.println(length);
             }
         }
 
